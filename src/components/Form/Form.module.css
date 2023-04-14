@@ -1,0 +1,48 @@
+.form{
+    color: aqua;
+    font-size: x-large;
+    text-transform: uppercase; /*capitalización texto*/
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.imagen
+{
+  height:240px;
+  width:350px;
+  z-index: -1;
+  size: cover;
+  border-radius: 50px; /*bordes redondos*/
+
+} 
+
+.boton{
+    color: greenyellow;
+    background-color: black;
+    font-size: large;
+    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+    padding: 8px; /*espacio alrededor texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+}
+
+.input{
+    font-size: 1.25rem;
+    background-color: black;
+    color: white;
+    border-radius: 50px; /*bordes redondos*/
+    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+}
+
+.advertencia{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 0.03em  greenyellow;
+}
+
+.texto{
+    background-color: aquamarine;
+}

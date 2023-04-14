@@ -1,0 +1,22 @@
+.logOut{
+    background-color: purple;
+    font-size: large;
+    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+    padding: 8px; /*espacio alrededor texto*/
+    text-decoration: none, none, red; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+}
+
+.about{
+    background-color: purple;
+}
+
+.home{
+    background-color: purple;
+}
+
+.color{
+    color: red
+ }
