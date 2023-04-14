@@ -11,19 +11,20 @@ import Form from './components/Form/Form';
 import style from './components/Nav/Nav.module.css'
 import Favorites from './components/Favorites/Favorites'
 
-
+const URL_BASE = 'https://be-a-rym.up.railway.app/api/character';
+const API_KEY = '76448700d4be.f00bfe4c440acaeea111';
 
 function App() {
    const [characters, setCharacters] = useState([])
 
    const onSearch = (id) => {
-      axios(`https://rickandmortyapi.com/api/character/${id}`)
+      axios(`${URL_BASE}/${id}?key=${API_KEY}`)
       .then(response => response.data)
       .then((data) => {
          if (data.name) {
-            setCharacters((oldChars) => [...oldChars, data]);
+            setCharacters(data);
          } else {
-            window.alert('¡No hay personajes con este ID!');
+            window.alert('No hay personajes con ese ID');
          }
       });
    }
