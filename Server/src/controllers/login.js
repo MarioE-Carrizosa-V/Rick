@@ -7,7 +7,7 @@ const login = (request, response) => {
 
     if(userFound) 
     return response.status(200).json({ access: true })
-    return response.status(404).json({ access : false })
+    return response.status(404).json({ access: false })
 }
 
 module.exports = {

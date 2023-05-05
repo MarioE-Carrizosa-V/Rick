@@ -3,7 +3,7 @@ import style from './Form.module.css'
 import Validation from "./validation"
 
 
-const Form = ({login}) => {
+const Form = ({ login }) => {
     const [userData, setUserData] = useState({
         email: '',
         password: ''
@@ -47,7 +47,7 @@ const Form = ({login}) => {
             <input name='password' type='password' value={userData.password} onChange={handleChange} placeholder="Ingrese su password" className={style.input}/>
             {errors.password && <p className={style.advertencia}>{errors.password}</p>}
             <br/> <br/>
-            <button className={style.boton}>Submit</button>
+            <button className={style.boton}> Submit </button>
         </form>
         </card>
     )

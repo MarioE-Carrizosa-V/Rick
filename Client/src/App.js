@@ -29,7 +29,7 @@ function App() {
       });
    }
    function onClose (id) {
-      const filtered = characters.filter(character => character.id !== Number(id))
+      const filtered = characters.filter(character => character.id !== id)
          setCharacters(filtered)
    }
    

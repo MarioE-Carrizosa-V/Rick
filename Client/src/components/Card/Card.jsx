@@ -27,19 +27,18 @@ function Card({id, name, status, species, gender, origin, image, onClose, addFav
       });
    }, [myFavorites]);
 
+   
+
    return (
       <div className={style.cardDisplay}>
       <card className={style.cards}>
         <button className={style.boton} onClick={() => onClose(id)}>X</button>
+        <br/> <br/>
+         <img src={image} alt='' />
          <Link to={`/detail/${id}`}>
          <h2 className={style.text}>{name}</h2>
          </Link>
-         <img src={image} alt='' />
-         <h2 className={style.card}>{status}</h2>
-         <h2 className={style.card}>{species}</h2>
-         <h2 className={style.card}>{gender}</h2>
-         <h2 className={style.card}>{origin}</h2>
-         <button onClick={handleFavorite}>{isFav ? '❤️' : '🤍' }</button>
+         <button className={style.favorite} onClick={handleFavorite}>{isFav ? '❤️' : '🤍' }</button>
       </card>
       </div>
    )

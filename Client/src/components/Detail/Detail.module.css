@@ -1,0 +1,18 @@
+.cards{
+    width: auto;
+    height: auto;
+    border-radius: 1rem;
+    border: 0.4rem solid silver;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to right, greenyellow, turquoise);
+    color: #000000;
+    font-size: 1rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.cardDisplay{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: initial;
+}
